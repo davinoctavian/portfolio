@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.container .react-pdf__Page__textContent, .container .react-pdf__Page__annotations {
+    display: none;
+}
+
+.download_button {
+    text-decoration: none;
+}

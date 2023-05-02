@@ -1,0 +1,10 @@
+.container {
+    font-family: "Brush Script MT", cursive, sans-serif;
+}
+
+.chart_container {
+    width: 100%;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}

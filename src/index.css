@@ -1,3 +1,16 @@
+:root {
+  --bgColor: #000000;
+  --menuColor: #3db83b;
+  --menuColorHover: #096108;
+  --skyColor: #87CEFA;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgColor);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.8rem;
+  }
 }
