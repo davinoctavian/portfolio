@@ -14,7 +14,7 @@ const Profile = () => {
   return (
     <div className={styles.container}>
       <div className={styles.image_container}>
-        <img src={pasPhoto} alt="pas-photo"/>
+        <img src={pasPhoto} alt="davin-octavian"/>
       </div>
       <div className={styles.description}>
         <table>
