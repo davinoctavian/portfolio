@@ -9,6 +9,7 @@ import Profile from "./components/Profile"
 import About from "./components/About"
 import Project from "./components/Project"
 import Cv from "./components/Cv"
+import NotFound from "./components/NotFound"
 import useCheckMobileScreen from "./components/ScreenDetect"
 
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Project />} />
             <Route path="/cv" element={<Cv />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <div className="navbar-right">
@@ -95,6 +97,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Project />} />
             <Route path="/cv" element={<Cv />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <div className="navbar-mobile">

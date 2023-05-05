@@ -45,7 +45,6 @@ const Profile = () => {
                   <div>{phone}</div>
                 }
               </td>
-              
             </tr>
           </tbody>
         </table>

@@ -26,3 +26,7 @@
 .note_description ol ul {
     word-break: break-all;
 }
+
+.fieldset {
+    margin-bottom: 2rem;
+}

@@ -1,9 +1,58 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./Project.module.css"
+import Modal from "./Modal.js"
+import crudAngular from "../assets/videos/crud-angular.mp4"
+import crudReactJsonServer from "../assets/videos/crud-react-jsonserver.mp4"
+import cssAnimation from "../assets/videos/css-animation.mp4"
+import nextjsGetGitRepo from "../assets/videos/nextjs-get-gitrepo.mp4"
+import reactReduxWithLogin from "../assets/videos/react-redux-with-login.mp4"
+import shoeStoreReactJsonServer from "../assets/videos/shoeStore-react-jsonserver.mp4"
+import simpleReactCdn from "../assets/videos/simple-react-cdn.mp4"
+import molaTv from "../assets/videos/molatv.mp4"
 
 const Project = () => {
+  const [ isModal, setModal ] = useState(false)
+  const [ datas, setDatas ] = useState([])
+
+  const handleGalleryClick = (param) => {
+    if (param === "personal") {
+      const dataImage = [{name: "Simple React from CDN Link", link: simpleReactCdn},
+                         {name: "CRUD React with Json Server", link: crudReactJsonServer},
+                         {name: "React Filter with Json Server", link: shoeStoreReactJsonServer},
+                         {name: "React Redux with Login", link: reactReduxWithLogin},
+                         {name: "CRUD Angular", link: crudAngular},
+                         {name: "NextJs Get Git Repository", link: nextjsGetGitRepo},
+                         {name: "Animation with CSS", link: cssAnimation}
+                        ] 
+      setDatas(dataImage)
+    }
+    if (param === "mola") {
+      const dataImage = [{name: "mola.tv", link: molaTv}]
+      setDatas(dataImage)
+    }
+    setModal(true)
+  }
+
+  const handleCloseModal = () => {
+    setModal(false)
+    setDatas([])
+  }
+
   return (
     <div className={styles.container}>
+      <Modal show={isModal} handleClose={() => handleCloseModal()}>
+        {datas?.map((data, index) => {
+          return (
+            <fieldset key={index} className={styles.fieldset}>
+              <legend>{data.name}</legend>
+              <video width="100%" height="100%" controls>
+                <source src={data.link} type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+            </fieldset>
+          )
+        })}
+      </Modal>
       <div className={styles.note_container}>
         <h3 className={styles.note_title}>Personal Project</h3>
         <hr />
@@ -30,8 +79,9 @@ const Project = () => {
             </li>
             <li>Link
               <ul>
-                <li>https://gitlab.com/users/davinoctavian/projects</li>
-                <li>https://github.com/davinoctavian?tab=repositories</li>
+                <li><a href="https://gitlab.com/users/davinoctavian/projects" target="_blank" rel="noreferrer">Gitlab</a></li>
+                <li><a href="https://github.com/davinoctavian?tab=repositories" target="_blank" rel="noreferrer">Github</a></li>
+                <li><button onClick={() => handleGalleryClick("personal")}>Gallery</button></li>
               </ul>
             </li>
           </ol>
@@ -66,6 +116,12 @@ const Project = () => {
                 <li>Testing</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li><a href="https://mola.tv/" target="_blank" rel="noreferrer">Mola</a></li>
+                <li><button onClick={() => handleGalleryClick("mola")}>Gallery</button></li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -95,6 +151,11 @@ const Project = () => {
                 <li>Deploy</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -122,6 +183,11 @@ const Project = () => {
                 <li>Fixing</li>
                 <li>Testing</li>
                 <li>Deploy</li>
+              </ul>
+            </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
               </ul>
             </li>
           </ol>
@@ -155,6 +221,11 @@ const Project = () => {
                 <li>Deploy</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -179,6 +250,11 @@ const Project = () => {
               <ul>
                 <li>Design Workflow</li>
                 <li>Make Master Menu</li>
+              </ul>
+            </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
               </ul>
             </li>
           </ol>
@@ -209,6 +285,11 @@ const Project = () => {
                 <li>Testing</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -235,6 +316,11 @@ const Project = () => {
                 <li>Enhance</li>
                 <li>Fixing</li>
                 <li>Testing</li>
+              </ul>
+            </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
               </ul>
             </li>
           </ol>
@@ -265,6 +351,11 @@ const Project = () => {
                 <li>Testing</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -292,6 +383,11 @@ const Project = () => {
                 <li>Testing</li>
               </ul>
             </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
+              </ul>
+            </li>
           </ol>
         </div>
       </div>
@@ -316,6 +412,11 @@ const Project = () => {
               <ul>
                 <li>Add New Feature</li>
                 <li>Learning</li>
+              </ul>
+            </li>
+            <li>Link
+              <ul>
+                <li>Didn't Have Access Anymore</li>
               </ul>
             </li>
           </ol>
