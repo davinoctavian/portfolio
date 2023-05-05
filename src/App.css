@@ -172,6 +172,7 @@
   border-left: 1px solid var(--menuColor);
   border-bottom: 1px solid var(--menuColor);
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .hex-right {
@@ -180,4 +181,5 @@
   border-right: 1px solid var(--menuColor);
   border-bottom: 1px solid var(--menuColor);
   transform: rotate(-45deg);
+  z-index: 1;
 }
