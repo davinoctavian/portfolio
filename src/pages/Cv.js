@@ -4,7 +4,7 @@ import cvPDF from "../assets/documents/CV_Davin_Octavian.pdf"
 import styles from "./Cv.module.css"
 import "react-pdf/dist/esm/Page/AnnotationLayer.css"
 import { useDispatch } from "react-redux"
-import { changePhone } from '../reducers/globalSlice'
+import { changePhone } from "../reducers/globalSlice"
 
 const Cv = () => {
   const dispatch = useDispatch()

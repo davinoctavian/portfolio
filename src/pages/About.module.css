@@ -1,6 +1,7 @@
 .container {
-    font-family: "Brush Script MT", cursive, sans-serif;
-}
+    /* font-family: "Brush Script MT", cursive, sans-serif;*/
+    width: 100%;
+} 
 
 .chart_container {
     width: 100%;

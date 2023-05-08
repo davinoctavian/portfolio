@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styles from "./Project.module.css"
-import Modal from "./Modal.js"
+import Modal from "../components/Modal.js"
 import crudAngular from "../assets/videos/crud-angular.mp4"
 import crudReactJsonServer from "../assets/videos/crud-react-jsonserver.mp4"
 import cssAnimation from "../assets/videos/css-animation.mp4"
@@ -53,10 +53,10 @@ const Project = () => {
           )
         })}
       </Modal>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Personal Project</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Personal Project</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>Mini Project I create to learn Programming Language</p>
           <ol>
             <li>Programming Language
@@ -81,16 +81,16 @@ const Project = () => {
               <ul>
                 <li><a href="https://gitlab.com/users/davinoctavian/projects" target="_blank" rel="noreferrer">Gitlab</a></li>
                 <li><a href="https://github.com/davinoctavian?tab=repositories" target="_blank" rel="noreferrer">Github</a></li>
-                <li><button onClick={() => handleGalleryClick("personal")}>Gallery</button></li>
+                <li><button className={styles.galleryButton} onClick={() => handleGalleryClick("personal")}>Gallery</button></li>
               </ul>
             </li>
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Mola.tv</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Mola.tv</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Global Media Visual</p>
           <ol>
             <li>Programming Language
@@ -119,16 +119,16 @@ const Project = () => {
             <li>Link
               <ul>
                 <li><a href="https://mola.tv/" target="_blank" rel="noreferrer">Mola</a></li>
-                <li><button onClick={() => handleGalleryClick("mola")}>Gallery</button></li>
+                <li><button className={styles.galleryButton} onClick={() => handleGalleryClick("mola")}>Gallery</button></li>
               </ul>
             </li>
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Mega Monitoring</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Mega Monitoring</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Qwerty Aplikasi Inovasi</p>
           <ol>
             <li>Programming Language
@@ -159,10 +159,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Qontact Agent</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Qontact Agent</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Qwerty Aplikasi Inovasi</p>
           <ol>
             <li>Programming Language
@@ -193,10 +193,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Qontact CRM</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Qontact CRM</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Qwerty Aplikasi Inovasi and other like Qontact Fullerton, 
             Qontact Telmark, and others project in this company based on this</p>
           <ol>
@@ -229,10 +229,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>DMS</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>DMS</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language
@@ -260,10 +260,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>External Constractor</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>External Constractor</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language
@@ -293,10 +293,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>SLIK</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>SLIK</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language
@@ -326,10 +326,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Insurance Claim</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Insurance Claim</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language
@@ -359,10 +359,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Bridging</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Bridging</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language
@@ -391,10 +391,10 @@ const Project = () => {
           </ol>
         </div>
       </div>
-      <div className={styles.note_container}>
-        <h3 className={styles.note_title}>Starbridge</h3>
+      <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Starbridge</h3>
         <hr />
-        <div className={styles.note_description}>
+        <div className={styles.noteDescription}>
           <p>This Project when I work on Indocyber Global Teknologi</p>
           <ol>
             <li>Programming Language

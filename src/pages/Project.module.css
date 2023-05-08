@@ -1,12 +1,12 @@
 .container {
-    font-family: "Brush Script MT", cursive, sans-serif;
+    /* font-family: "Brush Script MT", cursive, sans-serif; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
 
-.note_container {
+.noteContainer {
     padding: 2rem;
     border: 1px solid black;
     border-radius: 2rem;
@@ -14,19 +14,27 @@
     background-color: rgb(253, 253, 33);
 }
 
-.note_title {
+.noteTitle {
     color: var(--skyColor);
 }
 
-.note_description {
+.noteDescription {
     text-align: left;
     color: #000000;
 }
 
-.note_description ol ul {
+.noteDescription ol ul {
     word-break: break-all;
 }
 
 .fieldset {
     margin-bottom: 2rem;
+}
+
+.galleryButton {
+    padding: 0.2rem 0.4rem;
+    background-color: var(--bgColor);
+    color: var(--menuColor);
+    border-radius: 2rem;
+    cursor: pointer;
 }

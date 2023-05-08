@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { setupListeners } from '@reduxjs/toolkit/query'
-import { combineReducers } from '@reduxjs/toolkit'
-import globalReducer from './reducers/globalSlice'
-import storage from 'redux-persist/lib/storage'
+import { configureStore } from "@reduxjs/toolkit"
+import { setupListeners } from "@reduxjs/toolkit/query"
+import { combineReducers } from "@reduxjs/toolkit"
+import globalReducer from "./reducers/globalSlice"
+import storage from "redux-persist/lib/storage"
 import {
   persistReducer,
   FLUSH,
@@ -11,7 +11,7 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist'
+} from "redux-persist"
 
 const persistConfig = {
   key: 'root',

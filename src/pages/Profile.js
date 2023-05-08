@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import styles from './Profile.module.css'
-import pasPhoto from '../assets/images/pasphoto.jpg'
+import styles from "./Profile.module.css"
+import pasPhoto from "../assets/images/pasphoto.jpg"
 import { useSelector } from "react-redux"
 
 const Profile = () => {

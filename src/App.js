@@ -5,12 +5,12 @@ import { changeMenu, increment } from './reducers/globalSlice'
 
 import "./App.css"
 
-import Profile from "./components/Profile"
-import About from "./components/About"
-import Project from "./components/Project"
-import Cv from "./components/Cv"
-import NotFound from "./components/NotFound"
-import useCheckMobileScreen from "./components/ScreenDetect"
+import Profile from "./pages/Profile"
+import About from "./pages/About"
+import Project from "./pages/Project"
+import Cv from "./pages/Cv"
+import NotFound from "./pages/NotFound"
+import useCheckMobileScreen from "./hooks/useCheckMobileScreen"
 
 const App = () => {
   const menuName = useSelector((state) => state.global.menuName)

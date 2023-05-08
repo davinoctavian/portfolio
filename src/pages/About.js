@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from './About.module.css'
+import styles from "./About.module.css"
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, Legend } from "recharts"
 
 const CustomTooltip = ({ active, payload, label }) => {
