@@ -9,6 +9,7 @@ import reactReduxWithLogin from "../assets/videos/react-redux-with-login.mp4"
 import shoeStoreReactJsonServer from "../assets/videos/shoeStore-react-jsonserver.mp4"
 import simpleReactCdn from "../assets/videos/simple-react-cdn.mp4"
 import shoeStoreAngular from "../assets/videos/shoeStore-angular-typescript.mp4"
+import listPokemonAngular from "../assets/videos/list-pokemon-angular.mp4"
 import molaTv from "../assets/videos/molatv.mp4"
 
 const Project = () => {
@@ -24,6 +25,7 @@ const Project = () => {
                          {name: "CRUD Angular", link: crudAngular},
                          {name: "NextJs Get Git Repository", link: nextjsGetGitRepo},
                          {name: "Angular-Typescript shoe store", link: shoeStoreAngular},
+                         {name: "Angular List Pokemon", link: listPokemonAngular}
                          {name: "Animation with CSS", link: cssAnimation}
                         ] 
       setDatas(dataImage)
