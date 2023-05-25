@@ -25,7 +25,7 @@ const Project = () => {
                          {name: "CRUD Angular", link: crudAngular},
                          {name: "NextJs Get Git Repository", link: nextjsGetGitRepo},
                          {name: "Angular-Typescript shoe store", link: shoeStoreAngular},
-                         {name: "Angular List Pokemon", link: listPokemonAngular}
+                         {name: "Angular List Pokemon", link: listPokemonAngular},
                          {name: "Animation with CSS", link: cssAnimation}
                         ] 
       setDatas(dataImage)
