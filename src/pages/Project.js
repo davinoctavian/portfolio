@@ -122,6 +122,56 @@ const Project = () => {
         </div>
       </div>
       <div className={styles.noteContainer}>
+        <h3 className={styles.noteTitle}>Portal Ideku</h3>
+        <hr />
+        <div className={styles.noteDescription}>
+          <p>This Project when I work on Ide Inovasi Nusantara</p>
+          <ol>
+            <li>
+              Programming Language
+              <ul>
+                <li>Angular 14</li>
+              </ul>
+            </li>
+            <li>
+              Tools
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Github</li>
+                <li>Slack</li>
+                <li>Jira</li>
+                <li>Figma</li>
+                <li>BitBucket</li>
+                <li>Asana</li>
+              </ul>
+            </li>
+            <li>
+              Tasks
+              <ul>
+                <li>Add New Feature</li>
+                <li>Fixing</li>
+                <li>Enhance</li>
+                <li>Testing</li>
+              </ul>
+            </li>
+            <li>
+              Link
+              <ul>
+                <li>
+                  <a
+                    href="https://portal.ideku.io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ideku Portal
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div className={styles.noteContainer}>
         <h3 className={styles.noteTitle}>Portal</h3>
         <hr />
         <div className={styles.noteDescription}>
